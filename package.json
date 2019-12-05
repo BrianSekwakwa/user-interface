@@ -1,0 +1,14 @@
+{
+  "name": "user-interface",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "brian sekwakwa",
+  "license": "MIT",
+  "homepage": "https://briansekwakwa.github.io/user-interface",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "scripts": {
+    "sass": "node-sass -w scss -o dist/css --recursive"
+  }
+}

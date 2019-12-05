@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+// Media Query Mixins
+
+// small screens with screen widths of 600px or less
+@mixin x-small {
+  @media screen and (max-width: 575.98px) {
+    @content;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin small {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin medium {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin large {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@mixin x-large {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+// Wide Desktop Screens (1366px and up)
+@mixin xx-large {
+  @media screen and (min-width: 1366px) {
+    @content;
+  }
+}
