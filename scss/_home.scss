@@ -36,7 +36,7 @@
     padding: 2.5rem 2.5rem 1.5rem 2.5rem;
     box-shadow: 0px 0px 10px -3px $color2;
     border-radius: 5px;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     margin-bottom: 3rem;
 
     @include medium {
@@ -66,13 +66,13 @@
 
         & input {
           width: 100%;
-          padding-bottom: 0.2rem;
+          padding-bottom: 0.4rem;
           border: none;
           border-bottom: 2px solid $color2;
 
           &:focus {
             outline: none;
-            border-color: $color1;
+            border-color: $color3;
           }
         }
       }
@@ -103,7 +103,7 @@
           transition: color 0.3s ease-out;
 
           &:hover {
-            color: $color1;
+            color: $color3;
           }
         }
       }
@@ -122,8 +122,12 @@
 
         &:hover {
           background: #fff;
-          color: $color1;
-          border-color: $color1;
+          color: $color3;
+          border-color: $color3;
+        }
+
+        &:focus {
+          outline: none;
         }
       }
 
@@ -133,7 +137,7 @@
         font-size: 0.84rem;
 
         &__link {
-          color: $color1;
+          color: $color3;
           cursor: pointer;
         }
       }
