@@ -5,46 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- Link to font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/0ab34724d0.js"
+      crossorigin="anonymous"
+    ></script>
     <title>User Interface</title>
   </head>
   <body>
-    <div class="home">
-      <div class="home__left">
-        <h3>Some Header</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-          repellat quibusdam aperiam? Non, laborum commodi consequuntur soluta
-          saepe veniam adipisci eos at deleniti. Pariatur odit eligendi expedita
-          porro voluptas. Maiores?
-        </p>
-        <div>
-          some icons over here
+    <div class="container">
+      <header class="home">
+        <!-- Left side of the home page containing the info about the business -->
+        <div class="home__left">
+          <h3 class="home__left__header">WEB MASTERS</h3>
+          <p class="home__left__lead">
+            Our company is well known for offering the best services when it
+            comes to online security and cloud based solutions for your
+            business.
+          </p>
+          <div class="home__left__icons">
+            <i class="fab fa-html5"></i>
+            <i class="fas fa-user-lock"></i>
+            <i class="fas fa-cloud"></i>
+          </div>
         </div>
-      </div>
-      <div class="home__right">
-        <h3>Some header</h3>
-        <form>
-          <div>
-            <label for="name">Username</label>
-            <input type="text" />
-          </div>
-          <div>
-            <label for="password">Password</label>
-            <input type="text" />
-          </div>
-          <div>
-            <input type="checkbox" name="Remember me" id="remember" />
-            <label for="remember">Remember me</label>
-            <span>|</span>
-            <span>Forgot Your Password</span>
-          </div>
-          <button>Login</button>
-          <div>
-            <span>Not a member?</span>
-            <span>Create Account</span>
-          </div>
-        </form>
-      </div>
+        <!-- Right side of the home page containing the form to login -->
+        <div class="home__right">
+          <h3 class="home__right__header">MEMBER LOGIN</h3>
+          <form class="home__right__form">
+            <div
+              class="home__right__form__email-input form-fields mg-btm--1rem"
+            >
+              <label for="email"><i class="far fa-envelope"></i> </label>
+              <span>|</span>
+              <input type="email" name="email" id="email" placeholder="Email" />
+            </div>
+            <div
+              class="home__right__form__password-input form-fields mg-btm--1rem"
+            >
+              <label for="password"><i class="fas fa-lock"></i> </label>
+              <span>|</span>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+            </div>
+            <div class="home__right__form__login-input mg-btm--3rem">
+              <input type="checkbox" name="Remember me" id="remember" />
+              <label for="remember">Remember Me</label>
+              <span>|</span>
+              <span class="home__right__form__login-input__forgot-password"
+                >Forgot Password</span
+              >
+            </div>
+            <button class="home__right__form__button mg-btm--3rem">
+              LOGIN
+            </button>
+            <div class="home__right__form__account">
+              <span>Not a member ? </span>
+              <span class="home__right__form__account__link"
+                >Create Account</span
+              >
+            </div>
+          </form>
+        </div>
+      </header>
     </div>
     <script src="./js/main.js"></script>
   </body>

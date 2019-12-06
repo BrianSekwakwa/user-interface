@@ -5,6 +5,33 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  color: $color2;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../img/background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.mg-btm {
+  &--1rem {
+    margin-bottom: 1rem;
+  }
+  &--2rem {
+    margin-bottom: 2rem;
+  }
+  &--3rem {
+    margin-bottom: 3rem;
+  }
 }
 
 // Media Query Mixins
