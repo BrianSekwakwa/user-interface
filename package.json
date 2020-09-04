@@ -6,7 +6,7 @@
   "license": "MIT",
   "homepage": "https://briansekwakwa.github.io/user-interface",
   "dependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "scripts": {
     "sass": "node-sass -w scss -o dist/css --recursive"
